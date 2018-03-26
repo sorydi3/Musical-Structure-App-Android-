@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+android:id="@+id/main_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/text1"
+    />
+<SearchView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:iconifiedByDefault="false"
+    android:id="@+id/idsearch">
+
+</SearchView>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idListView">
+
+</ListView>
+
+
+<android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:id="@+id/floati_ac_buton_search"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_margin="16dp"
+    android:src="@drawable/ic_info_outline_white_36dp"
+    app:layout_anchorGravity="bottom|right|end" />
+</FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

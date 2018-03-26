@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent">
+
+      <ImageView
+        android:layout_width="wrap_content"
+        tools:contentDescription="back_image"
+          android:layout_gravity="top|end"
+          android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_payment_white_24dp"
+        android:id="@+id/paymentss"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top|end"
+        android:layout_margin="10dp"
+        android:text="Payment"
+
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/floati_ac_buton_now_playing"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_info_outline_white_36dp"
+        app:layout_anchorGravity="bottom|right|end"
+        app:elevation="10dp"
+        app:fabSize="auto"
+        app:backgroundTint="@color/colorPrimary"/>
+
+      <LinearLayout
+          android:id="@+id/activity_now_playing"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/info_a"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  tools:text="Title_Artist"
+                  android:textColor="@android:color/white"
+                  android:textStyle="bold"
+                  android:textSize="24sp"
+                  android:layout_gravity="center"
+                  android:id="@+id/title"
+                  />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="italic"
+                  android:textSize="24sp"
+                  android:textColor="@android:color/white"
+                  android:layout_gravity="center"
+                  android:id="@+id/Name"
+                  tools:text="Name_Artist"
+                 />
+      </LinearLayout>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="35dp"
+                  android:layout_marginBottom="15dp"
+                  android:layout_above="@id/info_a"
+                  android:id="@+id/image"
+                  android:src="@drawable/image"
+                  android:layout_alignParentTop="true" />
+          <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/manager"
+                  android:orientation="horizontal"
+                  android:layout_below="@id/info_a"
+                  android:layout_marginTop="16dp"
+                  android:layout_centerHorizontal="true"
+
+              >
+              <ImageView
+                  android:layout_width="0dp"
+                  tools:contentDescription="back_image"
+                  android:layout_height="48dp"
+                  android:layout_weight="1"
+                  android:src="@drawable/ic_skip_previous_black_24dp"
+                  android:id="@+id/next"/>
+
+              <ImageView
+                  android:layout_width="0dp"
+                  tools:contentDescription="play_image"
+                  android:layout_height="56dp"
+                  android:layout_weight="1"
+                  android:id="@+id/play"
+                  android:src="@drawable/ic_play_arrow_black_24dp"
+                  />
+              <ImageView
+                  android:layout_width="0dp"
+                  tools:contentDescription="back_image"
+                  android:layout_height="48dp"
+                  android:layout_weight="1"
+                  android:src="@drawable/ic_skip_next_black_24dp"
+                  android:id="@+id/back"/>
+
+
+          </LinearLayout>
+
+              <ProgressBar
+                  android:layout_width="match_parent"
+                  tools:contentDescription="progress_bar"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginRight="18dp"
+                  android:layout_marginEnd="18dp"
+                  android:layout_marginLeft="18dp"
+                  android:layout_marginStart="18dp"
+                  android:id="@+id/progress_bar"
+                  style="?android:progressBarStyleHorizontal"
+                  android:layout_below="@+id/manager"
+
+                  />
+          </RelativeLayout>
+      </LinearLayout>
+  </android.support.design.widget.CoordinatorLayout>

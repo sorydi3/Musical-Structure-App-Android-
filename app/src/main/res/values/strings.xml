@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ISD</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="info_display_all_songs">This is the main Activity(fragment),Is where
+        you can find all the songs retrieved from
+        the device and I used listview combined with arrayAdapter to display all the songs
+        .  </string>
+    <string name="info_recent_played">This  activity(fragment) display the recently played songs.
+    </string>
+    <string name="info_search">This is the SearchActivity(Fragment),here you can look for all the
+        available songs in your device.</string>
+    <string name="info_now_palying">This Activity Show the current playing songs.The APIs used are MediaPlayer  and AudioManager</string>
+    <string name="positiveButton">Cool!</string>
+    <string name="info_payment">This Activity will use  Paypal API to do a payment</string>
+</resources>
